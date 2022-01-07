@@ -4,7 +4,7 @@ import Rating from './Rating'
 
 const SingleProduct = ({product}) => {
     return (
-        <div className="product">
+        <div className="products">
             <Card>
                 <Card.Img variant="top" src={product.image} alt={product.name }/>
                 <Card.Body>
