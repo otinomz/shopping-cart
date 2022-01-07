@@ -26,31 +26,31 @@ const SingleProduct = ({product}) => {
                         }
                         <Rating rating={product.ratings}/>
                     </Card.Subtitle>
-                     {cart.some((p) => p.id === product.id) ? (
-            <Button
-              variant="danger"
-              onClick={() =>
-                dispatch({
-                  type: "REMOVE_FROM_CART",
-                  payload: product,
-                })
-              }
-            >
-              Remove from Cart
-            </Button>
-          ) : (
-            <Button
-              onClick={() =>
-                dispatch({
-                  type: "ADD_TO_CART",
-                  payload: SingleProduct,
-                })
-              }
-              disabled={!product.inStock}
-            >
-              {!product.inStock ? "Out of Stock" : "Add to Cart"}
-            </Button>
-          )}
+                    {cart.some((p) => p.id === product.id) ? (
+                        <Button
+                            variant="danger"
+                            onClick={() =>
+                                dispatch({
+                                type: "REMOVE_FROM_CART",
+                                payload: product,
+                                })
+                            }
+                        >
+                        Remove from Cart
+                        </Button>
+                    ) : (
+                        <Button
+                            onClick={() =>
+                                dispatch({
+                                type: "ADD_TO_CART",
+                                payload: SingleProduct,
+                                })
+                            }
+                            disabled={!product.inStock}
+                        >
+                        {!product.inStock ? "Out of Stock" : "Add to Cart"}
+                        </Button>
+                    )}
                  </Card.Body>
             </Card>
         </div>
