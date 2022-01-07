@@ -30,15 +30,19 @@ const SingleProduct = ({product}) => {
                         cart.some(pro => pro.id === product.id) ? (
                             <Button variant="danger">Remove from cart</Button>
                         ) : (
-                            <Button disabled={!product.inStock}>
+                                <Button
+                                    onClick={() => {
+                                        dispatch({
+                                            type: "ADD_TO_CART",
+                                            payload: product,
+                                        })
+                                    }}
+                                    disabled={!product.inStock}>
                                 {!product.inStock ? "Out of Stock" : "Add to cart"}
                             </Button>
                         )
                     }
-
-
-                    
-                </Card.Body>
+                 </Card.Body>
             </Card>
         </div>
     )
