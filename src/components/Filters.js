@@ -12,8 +12,6 @@ const Filters = () => {
           name="group1"
           type="radio"
           id={`inline-1`}
-          
-        //   checked={sort === "lowToHigh" ? true : false}
         />
       </span>
       <span>
@@ -23,7 +21,6 @@ const Filters = () => {
           name="group1"
           type="radio"
           id={`inline-2`}
-            //  checked={sort === "highToLow" ? true : false}
         />
       </span>
       <span>
@@ -33,7 +30,6 @@ const Filters = () => {
           name="group1"
           type="checkbox"
           id={`inline-3`}
-        // checked={byStock}
         />
       </span>
       <span>
@@ -43,16 +39,15 @@ const Filters = () => {
           name="group1"
           type="checkbox"
           id={`inline-4`}
-        //   checked={byFastDelivery}
         />
       </span>
-      <span>
+      {/* <span>
         <label style={{ paddingRight: 10 }}>Rating: </label>
-        {/* <Rating
-        //   rating={byRating}
+        <Rating
+          rating={byRating}
           style={{ cursor: "pointer" }}
-        /> */}
-      </span>
+        />
+      </span> */}
       <Button
         variant="light"
       >
