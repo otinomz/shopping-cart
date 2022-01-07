@@ -5,7 +5,7 @@ const SingleProduct = ({product}) => {
     return (
         <div className="product">
             <Card>
-                <Card.Img/>
+                <Card.Img variant="top" src={product.img} alt={product.name }/>
             </Card>
         </div>
     )
