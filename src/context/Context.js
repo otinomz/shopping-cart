@@ -5,7 +5,6 @@ import { cartReducer } from "./Reducers";
 const Cart = createContext()
 
 const Context = ({ children }) => {
-    
     // using faker package installed in the dependencies
     // to generate data
     const products = [...Array(20)].map(() => ({
