@@ -25,7 +25,7 @@ const Header = () => {
                     />
                 </Navbar.Text>
                  <Nav>
-                    <Dropdown>
+                    {/* <Dropdown className="d-inline mx-2 dropleft">
                         <Dropdown.Toggle variant="success">
                             <FaShoppingCart color="white" fontSize="25px" />
                             <Badge>{0}</Badge>
@@ -34,6 +34,16 @@ const Header = () => {
                         <Dropdown.Menu style={{ minWidth: 370 }} className="dropleft">
                             <span style={{padding: 10}}>Cart is Empty</span>
                         </Dropdown.Menu>   
+                    </Dropdown> */}
+                     <Dropdown className="d-inline mx-2 dropleft">
+                        <Dropdown.Toggle id="dropdown-autoclose-true">
+                            <FaShoppingCart color="white" fontSize="25px" />
+                            <Badge>{0}</Badge>
+                        </Dropdown.Toggle>
+
+                        <Dropdown.Menu>
+                            <Dropdown.Item href="#">Cart is Empty</Dropdown.Item>   
+                        </Dropdown.Menu>
                     </Dropdown>
                 </Nav>
             </Container>
