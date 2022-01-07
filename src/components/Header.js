@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navbar, Container } from 'react-bootstrap'
+import { Navbar, Container, FormControl } from 'react-bootstrap'
 
 const Header = () => {
     return (
@@ -8,6 +8,12 @@ const Header = () => {
                 <Navbar.Brand>
                     <a href="/">Shopping Cart</a>
                 </Navbar.Brand>
+                <Navbar.Text className="search">
+                    <FormControl
+                        style={{ width: 500 }}
+                        placeholder="Search a product"
+                    />
+                </Navbar.Text>
             </Container> 
         </Navbar>
     )
