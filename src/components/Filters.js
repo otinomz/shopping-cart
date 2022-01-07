@@ -40,7 +40,7 @@ const Filters = () => {
           type="checkbox"
           id={`inline-4`}
         />
-      </span>
+      </span>  
       {/* <span>
         <label style={{ paddingRight: 10 }}>Rating: </label>
         <Rating
