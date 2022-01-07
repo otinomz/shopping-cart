@@ -17,7 +17,6 @@ const Context = ({ children }) => {
         fastDelivery: faker.datatype.boolean(),
         ratings: faker.random.arrayElement([1, 2, 3, 4, 5]),
     }));
-    
 
     const [state, dispatch] = useReducer(cartReducer, {
         products: products,
