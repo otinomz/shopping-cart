@@ -28,7 +28,14 @@ const SingleProduct = ({product}) => {
                     </Card.Subtitle>
                     {
                         cart.some(pro => pro.id === product.id) ? (
-                            <Button variant="danger">Remove from cart</Button>
+                            <Button
+                                onClick={() => {
+                                        dispatch({
+                                            type: "REMOVE_FROM_CART",
+                                            payload: product,
+                                        })
+                                }}
+                                variant="danger">Remove from cart</Button>
                         ) : (
                                 <Button
                                     onClick={() => {
