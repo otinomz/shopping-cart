@@ -1,5 +1,13 @@
 import React from 'react'
-import { Navbar, Container, FormControl, Nav, Badge,  Dropdown  } from 'react-bootstrap'
+import {
+    Navbar,
+    Container,
+    FormControl,
+    Nav,
+    Badge,
+    Dropdown
+} from 'react-bootstrap'
+import {FaShoppingCart} from 'react-icons/fa'
 
 const Header = () => {
     return (
@@ -18,14 +26,15 @@ const Header = () => {
                 <Nav>
                     <Dropdown alignRight>
                         <Dropdown.Toggle variant="success">
-                            {/* <FaShoppingCart color="white" fontSize="25px" /> */}
+                            <FaShoppingCart color="white" fontSize="25px" />
                             <Badge>{10}</Badge>
                         </Dropdown.Toggle>
+                        <Dropdown.Menu style={{ minWidth: 370 }}>
+                            <span style={{padding: 10}}>Cart is Empty</span>
+                        </Dropdown.Menu>
                     </Dropdown>
 
-                    <Dropdown.Menu style={{minWidth: 370}}>
-                        <span style={{padding: 10}}>Cart is Empty</span>
-                    </Dropdown.Menu>
+                    
                 </Nav>
             </Container> 
         </Navbar>
