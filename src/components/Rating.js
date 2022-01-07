@@ -10,7 +10,7 @@ const Rating = ({rating, onClick, style}) => {
             if the rating passes as props is greater than the current index, drop a fillStar icon
             else if it isnt greater than the index, drop an airOutlineStar icon */}
             {[...Array(5)].map((_, index) => (
-                <span>
+                <span key={index} onClick={()=> onClick(index)} style={style}>
                     {rating > index ? (
                        <AiFillStar fontSize="15px"/> 
                     ) : (
@@ -18,7 +18,7 @@ const Rating = ({rating, onClick, style}) => {
                     )}
                 </span>
            ))} 
-        </>
+        </>  
     )
 }
 
