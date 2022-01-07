@@ -5,9 +5,7 @@ const SingleProduct = ({product}) => {
     return (
         <div className="product">
             <Card>
-                <Card.Img>
-                    
-                </Card.Img>
+                <Card.Img/>
             </Card>
         </div>
     )
