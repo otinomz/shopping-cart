@@ -6,7 +6,7 @@ import Rating from './Rating'
 const SingleProduct = ({product}) => {
     const {
         state: { cart },
-        dispatch
+        dispatch,
     } = CartState() 
     
     return (
