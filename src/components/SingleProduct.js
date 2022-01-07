@@ -3,9 +3,9 @@ import { Button, Card } from 'react-bootstrap'
 import Rating from './Rating'
 
 const SingleProduct = ({product}) => {
-    return (
+    retu rn (
         <div className="products">
-            <Card>
+            <Card> 
                 <Card.Img variant="top" src={product.image} alt={product.name }/>
                 <Card.Body>
                     <Card.Title>{product.name}</Card.Title>
