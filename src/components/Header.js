@@ -20,7 +20,7 @@ const Header = () => {
                     <FormControl
                         style={{ width: 500 }}
                         placeholder="Search a product"
-                        className="m- auto"
+                        className="m-auto"
                     />
                 </Navbar.Text>
                 <Nav>
@@ -33,8 +33,6 @@ const Header = () => {
                             <span style={{padding: 10}}>Cart is Empty</span>
                         </Dropdown.Menu>
                     </Dropdown>
-
-                    
                 </Nav>
             </Container> 
         </Navbar>
