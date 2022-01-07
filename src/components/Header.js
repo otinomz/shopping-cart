@@ -25,7 +25,7 @@ const Header = () => {
                     />
                 </Navbar.Text>
                  <Nav>
-                    <Dropdown >
+                    <Dropdown>
                         <Dropdown.Toggle variant="success">
                             <FaShoppingCart color="white" fontSize="25px" />
                             <Badge>{0}</Badge>
