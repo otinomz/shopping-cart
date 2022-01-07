@@ -1,5 +1,5 @@
 import {createContext} from "react"
-import faker from "faker
+import faker from "faker"
 
 const Cart = createContext()
 
