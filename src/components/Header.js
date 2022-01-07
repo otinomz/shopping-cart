@@ -36,7 +36,7 @@ const Header = () => {
                         </Dropdown.Menu>   
                     </Dropdown> */}
                      <Dropdown className="d-inline mx-2 dropleft">
-                        <Dropdown.Toggle id="dropdown-autoclose-true">
+                        <Dropdown.Toggle id="dropdown-autoclose-true" variant="success">
                             <FaShoppingCart color="white" fontSize="25px" />
                             <Badge>{0}</Badge>
                         </Dropdown.Toggle>
