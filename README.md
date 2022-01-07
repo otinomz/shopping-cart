@@ -1,0 +1,1 @@
+To understand complex state management in react App, I built a shooping cart using React js with Context Api and useReducers which when used together form an entity as powerful as Redux for state mangement. 
