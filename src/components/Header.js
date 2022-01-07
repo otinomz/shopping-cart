@@ -19,22 +19,11 @@ const Header = () => {
                 </Navbar.Brand>
                 <Navbar.Text className="search">
                     <FormControl
-                        style={{ width: 500 }}
                         placeholder="Search a product"
                         className="m-auto"
                     />
                 </Navbar.Text>
                  <Nav>
-                    {/* <Dropdown className="d-inline mx-2 dropleft">
-                        <Dropdown.Toggle variant="success">
-                            <FaShoppingCart color="white" fontSize="25px" />
-                            <Badge>{0}</Badge>
-                        </Dropdown.Toggle>
-
-                        <Dropdown.Menu style={{ minWidth: 370 }} className="dropleft">
-                            <span style={{padding: 10}}>Cart is Empty</span>
-                        </Dropdown.Menu>   
-                    </Dropdown> */}
                      <Dropdown className="d-inline mx-2 dropleft">
                         <Dropdown.Toggle id="dropdown-autoclose-true" variant="success">
                             <FaShoppingCart color="white" fontSize="25px" />
