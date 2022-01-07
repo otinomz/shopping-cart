@@ -24,7 +24,7 @@ const SingleProduct = ({product}) => {
                         Remove from cart
                     </Button>
                     <Button disabled={!product.inStock}>
-                        Add to cart
+                        {!product.inStock ? "Out of Stock" : "Add to cart"}
                      </Button>
                 </Card.Body>
             </Card>
