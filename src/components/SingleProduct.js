@@ -27,7 +27,7 @@ const SingleProduct = ({product}) => {
                         <Rating rating={product.ratings}/>
                     </Card.Subtitle>
                     {
-                        cart.some(pro => pro.id === product.id) ? (
+                        cart.some((pro) => pro.id === product.id) ? (
                             <Button
                                 onClick={() => {
                                         dispatch({
@@ -35,7 +35,10 @@ const SingleProduct = ({product}) => {
                                             payload: product,
                                         })
                                 }}
-                                variant="danger">Remove from cart</Button>
+                                variant="danger"
+                            >
+                                Remove from cart
+                            </Button>
                         ) : (
                                 <Button
                                     onClick={() => {
