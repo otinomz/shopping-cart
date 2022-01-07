@@ -1,9 +1,14 @@
 import React from 'react'
+import { Card } from 'react-bootstrap'
 
 const SingleProduct = ({product}) => {
     return (
-        <div>
-            {product.name}
+        <div className="product">
+            <Card>
+                <Card.Img>
+                    
+                </Card.Img>
+            </Card>
         </div>
     )
 }
